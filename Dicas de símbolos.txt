@@ -1,0 +1,6 @@
+Para fazer os < > dentro de um código sem que ele mesmo se transforme em um código basta usar:
+
+&lt; para um <
+&gt; para um >
+
+Para adicionar emojis é preciso por &#x antes de por o código do emoji

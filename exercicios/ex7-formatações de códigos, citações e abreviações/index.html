@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getelementById('teste')</code> é escrito em linguagem javaScript.</p>
+    <p>Acima usei uma fonte <strong>mono-espaçada</strong> para digitar o código, essa fonte é excelente para ler códigos. Aqui vai mais um exemplo:</p>
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'0 número {num} é PAR')
+    else:
+        print(f'0 número {num} é ÍMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>
+    <p> Para formatar usei a tag &lt;code&gt;&lt;/code&gt;.</p>
+
+    <h2>Citações Simples</h2>
+    <p>Como diria o pai do amigo do prof Gustavo: <q>O computador é um burro muito rápido</q></p>
+    <p>Aqui também há duas opções, usar apenas as aspas que não é semântico e usar a tag &lt;q&gt;&lt;q&gt; que é semântico</p>
+
+    <h2>Citações Completas</h2>
+    <p>Segundo Bruce H. Lipton no seu livro A Biologia da Crença:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/A_Biologia_Da_Cren%C3%A7a/4pQf4BIs8i8C?hl=pt-BR&gbpv=1&dq=biologia&printsec=frontcover">
+        Não deveria ser uma surpresa para nós o fato de as células serem tão inteligentes. Os organismos unicelulares foram a primeira forma de vida deste planeta. 
+    </blockquote>
+    <p>Já neste caso eu utilizei a tag &lt;blockquote&gt;&lt;/blockquote&gt; para fazer uma citação mais especifica possibilitando até colocar o endereço da fonte através da palavra <em>cite</em>.</p>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HypertText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> É isso aí mano. 
+    </p>
+    <p>Utilizando a tag &lt;abbr&gt;&lt;/abbr&gt; consigo dar sentido às abreviações.</p>
+</body>
+</html>

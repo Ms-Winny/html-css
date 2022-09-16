@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o temanho do navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem grande flexível">
+    </picture>
+    <p>Para colocar essas imagens dimânicas eu utilizei a tag <strong>picture</strong> e coloquei o tamanho max com 50px a mais.</p>
+    <h1>Reproduzindo áudio</h1>
+    <p>Nem todos os navegadores tem compatibilidade com o formato .mp3, existe outros formatos usados como <strong>.WAV e .OGG</strong></p>
+    <audio src="midia/64kbps-iwillfindvintageculture.mp3" controls autoplay></audio>
+    <p>Dessa forma acima eu simplesmente utilizei a tag <strong>audio</strong>, importante ressaltar que ela é limitada. Além do mais, tambe</p>
+    <audio preload="metadata" controls>
+        <source src="midia/320kbps-iwillfindvintageculture.mp3" type="audio/mpeg">
+        <source src="midia/320kbps-iwillfindvintageculture.ogg" type="audio/ogg">
+    </audio>
+    <p>No exemplo acima eu ainda utlizei a tag <strong>audio</strong> porém utilizei os recursos de forma diferente, sem contar que no exemplo acima utilizei a música de qualidade 320kbps</p>
+</body>
+</html>

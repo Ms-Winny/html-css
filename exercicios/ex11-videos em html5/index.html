@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+    <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>O vídeo abaixo está hospedado no meu próprio servidor</p>
+    <video width="560" poster="midia/paisagem-natural-floresta.jpg" controls autoplay loop>
+        <source src="midia/floresta.mp4.mp4" type="video/mp4">
+        <source src="midia/floresta.m4v.m4v" type="video/mp4">
+        <source src="midia/floresta.webm.webm" type="video/webm">
+        <p>Seu navegador não foi capaz de reproduzir o vídeo.</p>
+    </video>
+    
+    <h1>Inserindo videos do YouTube</h1>
+    <p>O vídeo abaixo está hospedado no servidor do YouTube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UPYcyZYXtrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

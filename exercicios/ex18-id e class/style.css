@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/*
+HTML = id    |   CSS = #
+HTML = class |   CSS = .
+
+É possível misturar os dois e colocar mais de uma class
+*/
+
+body{
+    background-color: #d3f1ea;
+    font-family: monospace;
+}
+
+h1{
+    color: #0d4724;
+}
+
+h1#principal{
+    text-align: center;
+    background-color: #3c925d;
+    color: white;
+}
+
+.basico{
+    color: #65b822;
+    font-weight: bold;
+}
+
+.intermediario{
+    color: #afad12;
+    font-weight: bold;
+}
+
+.avançado{
+    color: #b8310f;
+    font-weight: bold;
+}
+
+h2{
+    color: #208647;
+}
