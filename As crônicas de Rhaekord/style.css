@@ -4,59 +4,53 @@
     font-family: 'Uncial Antiqua', 'Times New Roman', Times, serif;
 }
 
-.container{
-    
-    background-color: black;
-    width: 100%; /*Dimensão para ocupar 100% da página*/
-    height: 100%; /*Dimensão para ocupar 100% da página*/
-    display: flex; /*Configuração que faz com que a div use o recurso de layout flexível*/
-    flex-direction: row; /*Faz com que os itens internos sejam dispostos horizontalmente*/
-    justify-content: center; /*Disposição dos elementos internos como centralizados na direção definidida acima (horizontalmente)*/
-    align-items: center; /*Os elementos internos tambpem são alinhados na vertical*/
-}
+:root{
+    --GG: #03070D;
+    --G: #262840;
+    --M: #2E3559;
+    --P: #956DA6;
+    --PP: #D97EA8;
 
-.box{
-    width: 1000px;
-    background-color: #161921;
-    padding: 5px 30px;
 }
 
 body{
     margin: 0px;
+    background-color: black;
 } 
 
 header{
-    background-color: #06070f;
+    background-color: var(--GG);
     text-align: center;
     padding: 5px;
-    border: solid 5px black;
 }
 
 li{
     display: inline-block;
-    margin: 10px;
 }
 
-a{
-    color: #BE10E0;
+a.navlink{
+    display: inline-block;
+    margin: 10px;
+    color: white;
+    background-color: var(--M);
     text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
     margin: 10px;
     padding: 10px;
+    transition-duration: 0.3s;
 }
 
-
-a:hover{
-    background-color: #930CAD;
-    color: white;
-}
-
-a:active{
-    color: #E78FFF;
+a.navlink:hover{
+    background-color: var(--PP);
+    color: black;
 }
 
 main{
+    max-width: 950px;
+    margin: auto;
     text-align: justify;
+    background-color: var(--M);
     color: white;
     padding: 20px;
 }
@@ -67,6 +61,15 @@ h1{
 
 h2{
     text-align: left;
+    background-color: var(--P);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+
+p{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 aside{
@@ -74,8 +77,12 @@ aside{
     text-align: center;
 }
 
+img{
+    width: 85%;
+    margin-bottom: 35px;
+}
+
 footer{
     color: white;
-    text-align: right;
-    padding: 1px 20px;
+    text-align: center;
 }

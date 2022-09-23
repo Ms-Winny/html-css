@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estudo de tabelas</title>
+        <style>
+            #ex2 td, #ex3 td, #ex4 td{
+                border: 1px solid black;
+            }
+
+            #ex3{
+                border-collapse: collapse;
+            }
+
+            #ex4{
+                width: 200px;
+                height: 200px;
+                border-collapse: collapse;
+                text-align: center;
+            }
+
+            #ex4 td{
+                padding: 5px;
+            }
+
+            .leal{
+                background-color: rgb(226, 247, 255);
+            }
+
+            .neutro{
+                background-color: rgb(218, 218, 218);
+            }
+
+            .mau{
+                background-color: rgb(255, 206, 206);
+            }
+
+            #cruzamento{
+                background-color: rgb(90, 90, 90);
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Estudo de Tabelas</h1>
+        <h3>Para criar uma tabela é necessário conhecimento de  algumas tags:</h3>
+        <p><strong>table</strong> = Tabela</p>
+        <p><strong>tr</strong> = Table Row ou Linha de Tabela</p>
+        <p><strong>th</strong> = Table Header ou Cabeçalho de Tabela</p>
+        <p><strong>td</strong> = Table Data ou Dado de Tabela</p>
+
+        <h3>Com essas informações, vamos criar uma tabela com alguns dados fictícios:</h3>
+        <p>Primeiro utilizarei a tag '<code>table</code>' e dentro dela as tags '<code>tr</code>' para criar as linhas</p>
+
+        <table>
+            <tr>
+                <td></td>
+                <td>Leal</td>
+                <td>Neutro</td>
+                <td>Mau</td>
+            </tr>
+            <tr>
+                <td>Leal</td>
+                <td>LB</td>
+                <td>LN</td>
+                <td>LM</td>
+            </tr>
+            <tr>
+                <td>Neutro</td>
+                <td>NB</td>
+                <td>N</td>
+                <td>NM</td>
+            </tr>
+            <tr>
+                <td>Mau</td>
+                <td>CB</td>
+                <td>CN</td>
+                <td>CM</td>
+            </tr>
+        </table>
+        <p>Também é possível adicionar bordas na tabela através do style '<code>border</code>' dentro de '<code>td</code>'</p>
+
+        <table id="ex2">
+            <tr>
+                <td></td>
+                <td>Leal</td>
+                <td>Neutro</td>
+                <td>Mau</td>
+            </tr>
+            <tr>
+                <td>Leal</td>
+                <td>LB</td>
+                <td>LN</td>
+                <td>LM</td>
+            </tr>
+            <tr>
+                <td>Neutro</td>
+                <td>NB</td>
+                <td>N</td>
+                <td>NM</td>
+            </tr>
+            <tr>
+                <td>Mau</td>
+                <td>CB</td>
+                <td>CN</td>
+                <td>CM</td>
+            </tr>
+        </table>
+
+        <p>Para remover o espaço entre a células basta utilizar a propriedade '<code>border-collapse: collapse;</code>' dentro da categoria '<code>table</code>'</p>
+
+        <table id="ex3">
+            <tr>
+                <td></td>
+                <td>Leal</td>
+                <td>Neutro</td>
+                <td>Mau</td>
+            </tr>
+            <tr>
+                <td>Leal</td>
+                <td>LB</td>
+                <td>LN</td>
+                <td>LM</td>
+            </tr>
+            <tr>
+                <td>Neutro</td>
+                <td>NB</td>
+                <td>N</td>
+                <td>NM</td>
+            </tr>
+            <tr>
+                <td>Mau</td>
+                <td>CB</td>
+                <td>CN</td>
+                <td>CM</td>
+            </tr>
+        </table>
+
+        <p>É possível decorar as células da mesma forma que outros tipos de textos</p>
+
+        <table id="ex4">
+            <tr>
+                <td id="cruzamento"></td>
+                <td class="leal">Leal</td>
+                <td class="neutro">Neutro</td>
+                <td class="mau">Mau</td>
+            </tr>
+            <tr>
+                <td class="leal">Leal</td>
+                <td>LB</td>
+                <td>LN</td>
+                <td>LM</td>
+            </tr>
+            <tr>
+                <td class="neutro">Neutro</td>
+                <td>NB</td>
+                <td>N</td>
+                <td>NM</td>
+            </tr>
+            <tr>
+                <td class="mau">Mau</td>
+                <td>CB</td>
+                <td>CN</td>
+                <td>CM</td>
+            </tr>
+        </table>
+    </body>
+</html>
