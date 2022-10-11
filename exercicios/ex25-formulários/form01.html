@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+
+        body{
+            background-image: url("imagens/pexels-cottonbro-5185076.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            backdrop-filter: blur(3px);
+            text-align: justify;
+        }
+
+        main{
+            background-color: #FFDACC;
+
+            margin: auto;
+            padding: 25px;
+            max-width: 850px;
+
+            border-radius: 8px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
+        }
+
+        h1{
+            color: #ffffff;
+            background-color: #ec9a8f;
+
+            padding: 5px;
+            border-radius: 5px;
+
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.589);
+        }
+
+        p{
+            font-size: 1.2em;
+            color: #634541;
+        }
+
+        strong{
+            color: #d1666b;
+        }
+
+        em{
+            background-color: #ffeae3;
+            padding: 3px;
+            border-radius: 8px;
+        }
+
+        form{
+            line-height: 1.5em;
+        }
+
+    </style>
+</head>
+<body>
+    <main><h1 style="margin-top: 0px;">Criando Formulários</h1>
+
+    <p>Para criar um formulário basta usar as tags <em><code>form</code></em> e <em><code>/form</code></em></p>
+
+    <form action="">
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+    <p>Os formulários precisam ter um <strong>id</strong> e um <strong>nome</strong> para serem identificados.</p>
+
+    <p>Além disso, é essencial envelopar as perguntas do formulário com a tag <em><code>label</code></em> para conectar uma pergunta com a <strong>caixa de input.</strong></p>
+
+    <h1>Passo a passo</h1>
+
+    <p>Primeiramente, ao criar um formulário com a tag <em><code>form</code></em> o visual studio irá criar um form com um único parâmetro, o <em><code>action=""</code></em>. Nós iremos o ignorar por enquanto, pois é necessário o conhecimento sobre outra linguagem.</p>
+
+    <p>Dentro da tag <em><code>form</code></em>, colocaremos a descrição dos dados que serão pedidos, por exemplo, um formulário sobre gostos pessoais:</p>
+
+    <form action="">
+        Cor preferida: <br>
+        Animal preferido: <br>
+        Estação do ano: <br>
+    </form>
+
+    <p>Pode ver que por enquanto não há local para o preenchedor digitar suas respostas, pra isso criaremos a tag <em><code>input</code></em> e utilizaremos o <em><code>type="text"</code></em></p>
+
+    <form action="">
+        Cor preferida: <input type="text" name="" id=""> <br>
+        Animal preferido: <input type="text" name="" id=""> <br>
+        Estação do ano: <input type="text" name="" id=""> <br>
+    </form>
+
+    <p>Observe que também está faltando um botão para que o preenchedor possa enviar suas respostas, é com a tag <em>input</em> que resolvemos esse problema, no entanto diferente de usar o <em><code>type="text"</code></em> nós utilizaremos o <em><code>type="submit"</code></em>. </p>
+
+    <p>Dentro do parâmetro <em><code>value=""</code></em>, colocaremos o texto para que o preenchedor clique como "enviar", "finalizar", e etc.</p>
+
+    <form action="">
+        <label for="idcor">Cor preferida:</label> <input type="text" name="cor" id="idcor"> <br>
+        Animal preferido: <input type="text" name="animal" id="idanimal"> <br>
+        Estação do ano: <input type="text" name="estação" id="idestação"> <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    </main>
+</body>
+</html>
