@@ -32,14 +32,39 @@
             background-color: #ec9a8f;
 
             padding: 5px;
-            border-radius: 5px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
 
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.589);
+        }
+
+        h1.subtitulo{
+            margin-bottom: 0px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+
+        }
+
+        h2{
+            color: #ec9a8f;
+            background-color: #ffe2d8;
+
+            font-style: italic;
+
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+            margin-top: 0px;
+            padding: 8px;
+            font-size: 1.2em;
         }
 
         p{
             font-size: 1.2em;
             color: #634541;
+            line-height: 1.35em;
         }
 
         strong{
@@ -63,7 +88,7 @@
 
     <p>Para criar um formulário basta usar as tags <em><code>form</code></em> e <em><code>/form</code></em></p>
 
-    <form action="">
+    <form action="cadastro.php">
         <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
@@ -79,15 +104,15 @@
 
     <p>Dentro da tag <em><code>form</code></em>, colocaremos a descrição dos dados que serão pedidos, por exemplo, um formulário sobre gostos pessoais:</p>
 
-    <form action="">
+    <form action="cadastro.php">
         Cor preferida: <br>
         Animal preferido: <br>
         Estação do ano: <br>
     </form>
 
-    <p>Pode ver que por enquanto não há local para o preenchedor digitar suas respostas, pra isso criaremos a tag <em><code>input</code></em> e utilizaremos o <em><code>type="text"</code></em></p>
+    <p>Pode ver que por enquanto não há local para o preenchedor digitar suas respostas, pra isso criaremos a tag <em><code>input</code></em> e utilizaremos o <em><code>type="text"</code></em>.</p>
 
-    <form action="">
+    <form action="cadastro.php">
         Cor preferida: <input type="text" name="" id=""> <br>
         Animal preferido: <input type="text" name="" id=""> <br>
         Estação do ano: <input type="text" name="" id=""> <br>
@@ -97,12 +122,48 @@
 
     <p>Dentro do parâmetro <em><code>value=""</code></em>, colocaremos o texto para que o preenchedor clique como "enviar", "finalizar", e etc.</p>
 
-    <form action="">
+    <form action="cadastro.php">
         <label for="idcor">Cor preferida:</label> <input type="text" name="cor" id="idcor"> <br>
         Animal preferido: <input type="text" name="animal" id="idanimal"> <br>
         Estação do ano: <input type="text" name="estação" id="idestação"> <br>
         <input type="submit" value="Enviar">
     </form>
+
+    <h1 class="subtitulo">Atributos de Formulários</h1>
+
+    <h2>Usuários, Senhas e Campos Obrigatórios</h2>
+
+    <p>Existem formulários aonde os dados pessoais são sensíveis e não podem estar visíveis, para isso usaremos o <em><code>input type="password"</code></em> para que os dados fiquem <strong>visualmente ocultos</strong>.</p>
+
+    <p>Nos formulários que criamos até agora, é possível que o usuário envie o o formulário sem preencher os dados, o que é um problema para dados <strong>obrigatórios</strong>. Para resolver isso colocamos a palavra <em><code>required</code></em> no input obrigatório.</p>
+
+    <form action="cadastro.php" method="post">
+
+        <label for="iusuario">Usuário:</label> <input type="text" name="usuario" id="iusuario" required> <br>
+
+        <label for="isenha">Senha:</label> <input type="password" name="senha" id="isenha" required> <br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+    </form>
+
+    <p>Com o atributo <em><code>size=""</code></em> definimos o tanto de caracteres que a caixa <strong>mostra</strong> sem precisar de barra de rolagem. Sabe aquele texto em letras transparentes que servem para guiar o usuário a saber o que deve digitar em cada caixa? Pois é, também é possível colocá-los, basta o usar o <em><code>placeholder=""</code></em>.</p>
+
+    <p>Além do mais, também há a possibilidade de atribuir limites <strong>minímos</strong> e <strong>máximos</strong> de caracteres, bastar usar <em><code>minlenght=""</code></em> e <em><code>maxlenght=""</code></em>.</p>
+
+    <form action="cadastro.php" method="post">
+
+        <label for="iusuario2">Usuário:</label> <input type="text" name="usuario" id="iusuario2" required minlength="6" maxlength="16" placeholder="Nome do Usuário"> <br>
+
+        <label for="isenha2">Senha:</label> <input type="password" name="senha" id="isenha2" required minlength="8" maxlength="24" placeholder="Minímo de 8 caracteres"> <br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+    </form>
+
+    <p></p>
 
     </main>
 </body>
